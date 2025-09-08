@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Haven</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f3ef;
+      color: #333;
+    }
+    header {
+      background-color: #3e2723;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #5d4037;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93');
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+    .hero h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+    .hero p {
+      font-size: 20px;
+    }
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card h3 {
+      margin: 10px 0 5px;
+    }
+    .card p {
+      color: #666;
+      padding: 0 10px 20px;
+    }
+    footer {
+      background-color: #3e2723;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Coffee Haven</h1>
+    <p>Your daily dose of happiness in a cup of☕</p>
+  </header>
+
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Welcome to Coffee Haven</h1>
+    <p>Freshly brewed coffee, cozy vibes, and delightful treats await you.</p>
+  </section>
+
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" alt="Latte">
+        <h3>Latte</h3>
+        <p>Creamy milk with rich espresso.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096" alt="Cappuccino">
+        <h3>Cappuccino</h3>
+        <p>Perfect balance of espresso, milk, and foam.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df" alt="Espresso">
+        <h3>Espresso</h3>
+        <p>Strong and bold shot of pure coffee.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b" alt="Mocha">
+        <h3>Mocha</h3>
+        <p>A sweet blend of coffee and chocolate.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>At Coffee Haven, we believe coffee is more than just a drink – it's a way to connect, relax, and enjoy life. Our beans are sourced ethically and brewed with love to give you the perfect cup every time.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: hello@coffeehaven.com</p>
+    <p>Phone: +91 98765 43210</p>
+    <p>Visit us at: California, America</p>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> Coffee Haven. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
